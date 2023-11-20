@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+<body>
+    {% for message in app.flashes("warning") %}
+        <p>{{message}}</p>
+    {% endfor %}
+
+    <h1>Votre nombre fétiche : 
+    {{number}}</h1>
+    <a href="/">back</a>
+    <h3>valeur max => {{max}}</h3>
+    <h3>valeur min => {{min}}</h3>
+    {% if number == THE_number %}
+        <h1>BRAVO</h1>
+    {% endif %}
+    
+</body>
+</html>
